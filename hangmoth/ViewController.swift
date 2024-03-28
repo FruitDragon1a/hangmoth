@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  hangmoth
 //
-//  Created by Ryka Jain on 3/27/24.
+//  Created by Fruit Dragon on 3/27/24.
 //
 
 import UIKit
@@ -28,13 +28,15 @@ class ViewController: UIViewController {
     
     var totalWins = 0 {
         didSet {
-            newRound()
+            newGameButton.isEnabled = true
+            updateUI()
         }
     }
     
     var totalLosses = 0 {
         didSet {
-            newRound()
+            newGameButton.isEnabled = true
+            updateUI()
         }
     }
     
@@ -61,10 +63,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         newGameButton.isEnabled = false
         newRound()
+        dictOfWords = allWords
         
     }
     
     func newRound() {
+        
+        
         if !listOfWords.isEmpty {
             let newWord = listOfWords.removeFirst()
             currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
@@ -76,6 +81,12 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    @IBAction func newGameButtonPressed(_ sender: UIButton) {
+        sender.isEnabled = false
+        newRound()
+    }
+    
     
     func enableLetterButtons (_ enable: Bool) {
         for button in letterButtons {
