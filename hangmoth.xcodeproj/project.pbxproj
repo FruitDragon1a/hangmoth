@@ -16,6 +16,7 @@
 		F3C41B562BB505930011E39F /* hangmothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B552BB505930011E39F /* hangmothTests.swift */; };
 		F3C41B602BB505930011E39F /* hangmothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B5F2BB505930011E39F /* hangmothUITests.swift */; };
 		F3C41B622BB505930011E39F /* hangmothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B612BB505930011E39F /* hangmothUITestsLaunchTests.swift */; };
+		F3C41B6F2BB50FF50011E39F /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B6E2BB50FF50011E39F /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F3C41B5B2BB505930011E39F /* hangmothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangmothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C41B5F2BB505930011E39F /* hangmothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmothUITests.swift; sourceTree = "<group>"; };
 		F3C41B612BB505930011E39F /* hangmothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmothUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F3C41B6E2BB50FF50011E39F /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				F3C41B402BB505900011E39F /* SceneDelegate.swift */,
 				F3C41B422BB505900011E39F /* ViewController.swift */,
 				F3C41B442BB505900011E39F /* Main.storyboard */,
+				F3C41B6E2BB50FF50011E39F /* Game.swift */,
 				F3C41B472BB505930011E39F /* Assets.xcassets */,
 				F3C41B492BB505930011E39F /* LaunchScreen.storyboard */,
 				F3C41B4C2BB505930011E39F /* Info.plist */,
@@ -261,6 +264,7 @@
 				F3C41B432BB505900011E39F /* ViewController.swift in Sources */,
 				F3C41B3F2BB505900011E39F /* AppDelegate.swift in Sources */,
 				F3C41B412BB505900011E39F /* SceneDelegate.swift in Sources */,
+				F3C41B6F2BB50FF50011E39F /* Game.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
