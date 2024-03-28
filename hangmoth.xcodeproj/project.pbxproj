@@ -1,0 +1,606 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3C41B3F2BB505900011E39F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B3E2BB505900011E39F /* AppDelegate.swift */; };
+		F3C41B412BB505900011E39F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B402BB505900011E39F /* SceneDelegate.swift */; };
+		F3C41B432BB505900011E39F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B422BB505900011E39F /* ViewController.swift */; };
+		F3C41B462BB505900011E39F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3C41B452BB505900011E39F /* Base */; };
+		F3C41B482BB505930011E39F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C41B472BB505930011E39F /* Assets.xcassets */; };
+		F3C41B4B2BB505930011E39F /* Base in Resources */ = {isa = PBXBuildFile; fileRef = F3C41B4A2BB505930011E39F /* Base */; };
+		F3C41B562BB505930011E39F /* hangmothTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B552BB505930011E39F /* hangmothTests.swift */; };
+		F3C41B602BB505930011E39F /* hangmothUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B5F2BB505930011E39F /* hangmothUITests.swift */; };
+		F3C41B622BB505930011E39F /* hangmothUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C41B612BB505930011E39F /* hangmothUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3C41B522BB505930011E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3C41B332BB505900011E39F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3C41B3A2BB505900011E39F;
+			remoteInfo = hangmoth;
+		};
+		F3C41B5C2BB505930011E39F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3C41B332BB505900011E39F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3C41B3A2BB505900011E39F;
+			remoteInfo = hangmoth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3C41B3B2BB505900011E39F /* hangmoth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = hangmoth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C41B3E2BB505900011E39F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F3C41B402BB505900011E39F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F3C41B422BB505900011E39F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F3C41B452BB505900011E39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3C41B472BB505930011E39F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3C41B4A2BB505930011E39F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3C41B4C2BB505930011E39F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3C41B512BB505930011E39F /* hangmothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangmothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C41B552BB505930011E39F /* hangmothTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmothTests.swift; sourceTree = "<group>"; };
+		F3C41B5B2BB505930011E39F /* hangmothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hangmothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C41B5F2BB505930011E39F /* hangmothUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmothUITests.swift; sourceTree = "<group>"; };
+		F3C41B612BB505930011E39F /* hangmothUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hangmothUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3C41B382BB505900011E39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C41B4E2BB505930011E39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C41B582BB505930011E39F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3C41B322BB505900011E39F = {
+			isa = PBXGroup;
+			children = (
+				F3C41B3D2BB505900011E39F /* hangmoth */,
+				F3C41B542BB505930011E39F /* hangmothTests */,
+				F3C41B5E2BB505930011E39F /* hangmothUITests */,
+				F3C41B3C2BB505900011E39F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3C41B3C2BB505900011E39F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3C41B3B2BB505900011E39F /* hangmoth.app */,
+				F3C41B512BB505930011E39F /* hangmothTests.xctest */,
+				F3C41B5B2BB505930011E39F /* hangmothUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C41B3D2BB505900011E39F /* hangmoth */ = {
+			isa = PBXGroup;
+			children = (
+				F3C41B3E2BB505900011E39F /* AppDelegate.swift */,
+				F3C41B402BB505900011E39F /* SceneDelegate.swift */,
+				F3C41B422BB505900011E39F /* ViewController.swift */,
+				F3C41B442BB505900011E39F /* Main.storyboard */,
+				F3C41B472BB505930011E39F /* Assets.xcassets */,
+				F3C41B492BB505930011E39F /* LaunchScreen.storyboard */,
+				F3C41B4C2BB505930011E39F /* Info.plist */,
+			);
+			path = hangmoth;
+			sourceTree = "<group>";
+		};
+		F3C41B542BB505930011E39F /* hangmothTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3C41B552BB505930011E39F /* hangmothTests.swift */,
+			);
+			path = hangmothTests;
+			sourceTree = "<group>";
+		};
+		F3C41B5E2BB505930011E39F /* hangmothUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F3C41B5F2BB505930011E39F /* hangmothUITests.swift */,
+				F3C41B612BB505930011E39F /* hangmothUITestsLaunchTests.swift */,
+			);
+			path = hangmothUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3C41B3A2BB505900011E39F /* hangmoth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C41B652BB505930011E39F /* Build configuration list for PBXNativeTarget "hangmoth" */;
+			buildPhases = (
+				F3C41B372BB505900011E39F /* Sources */,
+				F3C41B382BB505900011E39F /* Frameworks */,
+				F3C41B392BB505900011E39F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = hangmoth;
+			productName = hangmoth;
+			productReference = F3C41B3B2BB505900011E39F /* hangmoth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3C41B502BB505930011E39F /* hangmothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C41B682BB505930011E39F /* Build configuration list for PBXNativeTarget "hangmothTests" */;
+			buildPhases = (
+				F3C41B4D2BB505930011E39F /* Sources */,
+				F3C41B4E2BB505930011E39F /* Frameworks */,
+				F3C41B4F2BB505930011E39F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3C41B532BB505930011E39F /* PBXTargetDependency */,
+			);
+			name = hangmothTests;
+			productName = hangmothTests;
+			productReference = F3C41B512BB505930011E39F /* hangmothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F3C41B5A2BB505930011E39F /* hangmothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3C41B6B2BB505930011E39F /* Build configuration list for PBXNativeTarget "hangmothUITests" */;
+			buildPhases = (
+				F3C41B572BB505930011E39F /* Sources */,
+				F3C41B582BB505930011E39F /* Frameworks */,
+				F3C41B592BB505930011E39F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3C41B5D2BB505930011E39F /* PBXTargetDependency */,
+			);
+			name = hangmothUITests;
+			productName = hangmothUITests;
+			productReference = F3C41B5B2BB505930011E39F /* hangmothUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3C41B332BB505900011E39F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					F3C41B3A2BB505900011E39F = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					F3C41B502BB505930011E39F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = F3C41B3A2BB505900011E39F;
+					};
+					F3C41B5A2BB505930011E39F = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = F3C41B3A2BB505900011E39F;
+					};
+				};
+			};
+			buildConfigurationList = F3C41B362BB505900011E39F /* Build configuration list for PBXProject "hangmoth" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3C41B322BB505900011E39F;
+			productRefGroup = F3C41B3C2BB505900011E39F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3C41B3A2BB505900011E39F /* hangmoth */,
+				F3C41B502BB505930011E39F /* hangmothTests */,
+				F3C41B5A2BB505930011E39F /* hangmothUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3C41B392BB505900011E39F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C41B482BB505930011E39F /* Assets.xcassets in Resources */,
+				F3C41B4B2BB505930011E39F /* Base in Resources */,
+				F3C41B462BB505900011E39F /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C41B4F2BB505930011E39F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C41B592BB505930011E39F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3C41B372BB505900011E39F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C41B432BB505900011E39F /* ViewController.swift in Sources */,
+				F3C41B3F2BB505900011E39F /* AppDelegate.swift in Sources */,
+				F3C41B412BB505900011E39F /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C41B4D2BB505930011E39F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C41B562BB505930011E39F /* hangmothTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3C41B572BB505930011E39F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3C41B622BB505930011E39F /* hangmothUITestsLaunchTests.swift in Sources */,
+				F3C41B602BB505930011E39F /* hangmothUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3C41B532BB505930011E39F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3C41B3A2BB505900011E39F /* hangmoth */;
+			targetProxy = F3C41B522BB505930011E39F /* PBXContainerItemProxy */;
+		};
+		F3C41B5D2BB505930011E39F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3C41B3A2BB505900011E39F /* hangmoth */;
+			targetProxy = F3C41B5C2BB505930011E39F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3C41B442BB505900011E39F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3C41B452BB505900011E39F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3C41B492BB505930011E39F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3C41B4A2BB505930011E39F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3C41B632BB505930011E39F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F3C41B642BB505930011E39F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3C41B662BB505930011E39F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hangmoth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fruitdragon.hangmoth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3C41B672BB505930011E39F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = hangmoth/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fruitdragon.hangmoth;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F3C41B692BB505930011E39F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fruitdragon.hangmothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hangmoth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hangmoth";
+			};
+			name = Debug;
+		};
+		F3C41B6A2BB505930011E39F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fruitdragon.hangmothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hangmoth.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/hangmoth";
+			};
+			name = Release;
+		};
+		F3C41B6C2BB505930011E39F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fruitdragon.hangmothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hangmoth;
+			};
+			name = Debug;
+		};
+		F3C41B6D2BB505930011E39F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = fruitdragon.hangmothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = hangmoth;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3C41B362BB505900011E39F /* Build configuration list for PBXProject "hangmoth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C41B632BB505930011E39F /* Debug */,
+				F3C41B642BB505930011E39F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C41B652BB505930011E39F /* Build configuration list for PBXNativeTarget "hangmoth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C41B662BB505930011E39F /* Debug */,
+				F3C41B672BB505930011E39F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C41B682BB505930011E39F /* Build configuration list for PBXNativeTarget "hangmothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C41B692BB505930011E39F /* Debug */,
+				F3C41B6A2BB505930011E39F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3C41B6B2BB505930011E39F /* Build configuration list for PBXNativeTarget "hangmothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3C41B6C2BB505930011E39F /* Debug */,
+				F3C41B6D2BB505930011E39F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3C41B332BB505900011E39F /* Project object */;
+}
