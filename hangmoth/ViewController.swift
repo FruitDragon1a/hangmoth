@@ -59,6 +59,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        newGameButton.isEnabled = false
         newRound()
         
     }
@@ -71,6 +72,7 @@ class ViewController: UIViewController {
             updateUI()
         } else {
             enableLetterButtons(false)
+            updateUI()
         }
         
     }
@@ -87,7 +89,7 @@ class ViewController: UIViewController {
             letters.append(String(letter))
         }
         let wordWithSpacing = letters.joined(separator: " ")
-        correctWordLabel.text = currentGame.formattedWord
+        correctWordLabel.text = wordWithSpacing
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
         roomImageView.image = UIImage(named: "kwami \(currentGame.incorrectMovesRemaining)")
     }
