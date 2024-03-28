@@ -10,7 +10,7 @@ import UIKit
 class ViewController: UIViewController {
     
     var listOfWords: [String] = ["ladybug", "black cat", "butterfly", "peacock", "fox", "turtle", "bee", "snake", "tiger", "goat", "pig", "rooster", "monkey", "rabbit", "bunny", "dog", "horse", "mouse", "rat", "ox", "dragon", "eagle"]
-    let allWords: [String: [String]] = [
+    var dictOfWords: [String: [String]] = [
         "kwami names":["tikki", "plagg", "nooroo", "duusu", "trixx", "wayzz", "pollen", "sass", "roaar", "ziggy", "daizzi", "orikko", "xuppu", "fluff", "barkk", "kaalki", "mullo", "stompp", "longg", "liiri", "gimmi"],
         "power names":["miracle cure", "lucky charm", "cataclysm", "akuma", "kamiko", "sentibeing", "sentimonster", "mirage", "shellter", "venom", "second chance", "clout", "genesis", "gift", "sublimation", "uproar", "burrow", "fetch", "voyage", "multitude", "resistance", "wind dragon", "water dragon", "storm dragon", "liberation", "wish"],
         "kwami domains":["creation", "destruction", "transmission", "emotion", "illusion", "protection", "action", "subjection", "subjugation", "intuition", "elation", "passion", "jubilation", "pretension", "derision", "evolution", "adoration", "migration", "multiplication", "determination", "perfection", "freedom", "reality"],
@@ -22,7 +22,6 @@ class ViewController: UIViewController {
         "akuma names":["glaciator", "troublemaker", "weredad", "puppeteer", "catalyst", "volpina", "chameleon", "hoaxer", "stormy weather", "monsieur pigeon", "timebreaker", "copycat", "chat blanc", "pharaoh", "lady wifi", "bubbler", "rogercop", "horrificator", "mime", "evillustrator", "pixelator", "sandboy", "animan", "darkblade", "gamer", "reflekta", "antibug", "stoneheart", "collector", "gigantitan", "befana", "riposte", "gorizilla", "sapotis", "robustus", "syren", "zombizou", "reverser", "frightningale", "frozer", "anansi", "maletictator", "queen wasp", "miracle queen", "queen mayor", "queen banana", "animaestro", "bakerix", "backwarder", "reflekdoll", "silencer", "onichan", "ikari gozen", "miraculer", "sole crusher", "oblivio", "desperada", "christmaster", "princess fragrance", "startrain", "kwamibuster", "feast", "timetagger", "truth", "lies", "psychomedian", "guiltrip", "crocoduel", "optigami", "sentibubbler", "hacksan", "rocketear", "wishmaker", "simpleman", "qilin", "ephemeral", "penalteam", "risk", "strikeback", "safari"],
         "civilian holders":["marinette", "adrien", "gabriel", "nathalie", "félix", "alya", "lila", "nino", "zoé", "chloé", "luka", "juleka", "nathaniel", "rose", "marc", "kim", "alix", "sabrina", "max", "mylène", "kagami", "jess", "cerise", "iris", "fei"]
     ]
-    var dictOfWords: [String:[String]] = [:]
     
     let incorrectMovesAllowed = 7
     
@@ -36,7 +35,7 @@ class ViewController: UIViewController {
     var totalLosses = 0 {
         didSet {
             newGameButton.isEnabled = true
-            updateUI()
+        updateUILost()
         }
     }
     
@@ -63,7 +62,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         newGameButton.isEnabled = false
         newRound()
-        dictOfWords = allWords
         
     }
     
@@ -71,13 +69,24 @@ class ViewController: UIViewController {
         
         
         if !listOfWords.isEmpty {
-            let newWord = listOfWords.removeFirst()
+            
+            // Select a random key
+            let randomKeyIndex = Int.random(in: 0..<dictOfWords.count)
+            let randomKey = Array(dictOfWords.keys)[randomKeyIndex]
+
+            // Select a random value from the list associated with the random key
+            let randomValueIndex = Int.random(in: 0..<dictOfWords[randomKey]!.count)
+            let randomValue = dictOfWords[randomKey]![randomValueIndex]
+            
+            let newWord = randomValue
+            newWordCategory = randomKey
             currentGame = Game(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed, guessedLetters: [])
             enableLetterButtons(true)
             updateUI()
-        } else {
-            enableLetterButtons(false)
+        }
+        else {
             updateUI()
+            enableLetterButtons(false)
         }
         
     }
@@ -102,6 +111,19 @@ class ViewController: UIViewController {
         let wordWithSpacing = letters.joined(separator: " ")
         correctWordLabel.text = wordWithSpacing
         scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        category.text = "Category: \(newWordCategory)"
+        roomImageView.image = UIImage(named: "kwami \(currentGame.incorrectMovesRemaining)")
+    }
+    
+    func updateUILost() {
+        var letters = [String]()
+        for letter in currentGame.word {
+            letters.append(String(letter))
+        }
+        let wordWithSpacing = letters.joined(separator: " ")
+        correctWordLabel.text = wordWithSpacing
+        scoreLabel.text = "Wins: \(totalWins), Losses: \(totalLosses)"
+        category.text = "Category: \(newWordCategory)"
         roomImageView.image = UIImage(named: "kwami \(currentGame.incorrectMovesRemaining)")
     }
     
