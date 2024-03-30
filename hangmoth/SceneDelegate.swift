@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  hangmoth
 //
-//  Created by Ryka Jain on 3/27/24.
+//  Created by Fruit Dragon on 3/27/24.
 //
 
 import UIKit

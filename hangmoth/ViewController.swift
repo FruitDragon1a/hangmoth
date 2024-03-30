@@ -14,8 +14,8 @@ class ViewController: UIViewController {
         "kwami names":["tikki", "plagg", "nooroo", "duusu", "trixx", "wayzz", "pollen", "sass", "roaar", "ziggy", "daizzi", "orikko", "xuppu", "fluff", "barkk", "kaalki", "mullo", "stompp", "longg", "liiri", "gimmi"],
         "power names":["miracle cure", "lucky charm", "cataclysm", "akuma", "kamiko", "sentibeing", "sentimonster", "mirage", "shellter", "venom", "second chance", "clout", "genesis", "gift", "sublimation", "uproar", "burrow", "fetch", "voyage", "multitude", "resistance", "wind dragon", "water dragon", "storm dragon", "liberation", "wish"],
         "kwami domains":["creation", "destruction", "transmission", "emotion", "illusion", "protection", "action", "subjection", "subjugation", "intuition", "elation", "passion", "jubilation", "pretension", "derision", "evolution", "adoration", "migration", "multiplication", "determination", "perfection", "freedom", "reality"],
-        "transformed holders":["ladybug", "scarabella", "shadybug", "toxinelle", "claw noir", "griffe noir", "chat noir", "lady noire", "kitty noire", "monarch", "hawk moth", "mayura", "argos", "rena rouge", "rena furtive", "carapace", "vesperia", "viperion", "purple tigress", "caprikid", "pigella", "rooster bold", "king monkey", "bunnyx", "traquemoiselle", "miss hound", "pegasus", "polymouse", "multimouse", "minotaurox", "ryuuko", "eagle", "ladydragon"],
-        "weapons":["yo-yo", "baton", "staff", "cane", "fan", "flute", "shield", "trompo", "top", "lyre", "bolas", "paintbrush", "tambourine", "pen", "bō", "umbrella", "ball", "horseshoe", "jumprope", "sledgehammer", "sword", "bullroar", "parasol"],
+        "transformed holders":["ladybug", "scarabella", "shadybug", "toxinelle", "claw noir", "griffe noir", "chat noir", "lady noire", "kitty noire", "monarch", "hawk moth", "mayura", "argos", "rena rouge", "rena furtive", "carapace", "vesperia", "viperion", "purple tigress", "caprikid", "pigella", "rooster bold", "king monkey", "bunnyx", "traquemoiselle", "miss hound", "pegasus", "polymouse", "multimouse", "minotaurox", "ryūko", "eagle", "ladydragon"],
+        "weapons":["yo-yo", "baton", "staff", "stick", "cane", "fan", "flute", "shield", "trompo", "top", "lyre", "bolas", "paintbrush", "tambourine", "pen", "bō", "umbrella", "ball", "horseshoe", "jumprope", "sledgehammer", "sword", "bullroar", "parasol"],
         "animal counterparts":["ladybug", "black cat", "butterfly", "peacock", "fox", "turtle", "bee", "snake", "tiger", "goat", "pig", "rooster", "monkey", "rabbit", "bunny", "dog", "horse", "mouse", "rat", "ox", "dragon", "eagle"],
         "jewelry forms":["earrings", "ring", "brooch", "necklace", "pendant", "foxtail", "bracelet", "comb", "ouroboros", "hairclips", "anklet", "circlet", "coronet", "pocketwatch", "collar", "sunglasses", "coin", "choker", "talon"],
         "general":["miraculous", "mage", "miracle", "guardian", "temple", "quantic", "kwami", "box", "luck", "lucky"],
@@ -35,7 +35,7 @@ class ViewController: UIViewController {
     var totalLosses = 0 {
         didSet {
             newGameButton.isEnabled = true
-        updateUILost()
+            updateUILost()
         }
     }
     
@@ -129,12 +129,13 @@ class ViewController: UIViewController {
     
     
     @IBAction func letterButtonPressed(_ sender: UIButton) {
-        
-        sender.isEnabled = false
-        let letterString = sender.configuration!.title!
-        let letter = Character(letterString.lowercased())
-        currentGame.playerGuessed(letter: letter)
-        updateGameState()
+        if (newGameButton.isEnabled == false) {
+            sender.isEnabled = false
+            let letterString = sender.configuration!.title!
+            let letter = Character(letterString.lowercased())
+            currentGame.playerGuessed(letter: letter)
+            updateGameState()
+        }
     }
     
     func updateGameState() {
@@ -146,9 +147,5 @@ class ViewController: UIViewController {
             updateUI()
         }
     }
-    
-    
-    
-    
     
 }
